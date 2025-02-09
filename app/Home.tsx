@@ -5,7 +5,6 @@ import { LinearGradient } from 'expo-linear-gradient'
 import { Link, useRouter } from 'expo-router'
 import { Task, useDeleteTaskHook, useGetAllTasksHook } from '@/hooks/useOpenDatabaseHook'
 import { MaterialIcons } from '@expo/vector-icons'
-import { format } from 'date-fns'
 import Header from '@/components/Header'
 
 const Home = () => {
@@ -40,7 +39,6 @@ const Home = () => {
       <ScrollView className="flex-1 px-5" showsVerticalScrollIndicator={false}>
         <View className="flex flex-row justify-between items-center mb-6 mt-4">
           <Text className="text-3xl font-bold text-purple-900">My Tasks</Text>
-          <Text className="text-gray-500">{format(new Date(), 'MMM dd, yyyy')}</Text>
         </View>
 
         <View className="mb-24">
