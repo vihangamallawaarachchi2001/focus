@@ -4,7 +4,7 @@
     "slug": "focus",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/394381005_917c45bf-2da5-4492-bfd8-4ba114781c46-removebg-preview-adaptive.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,29 +13,40 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/images/394381005_917c45bf-2da5-4492-bfd8-4ba114781c46-removebg-preview-adaptive.png",
+        "backgroundColor": "#f3e7ff"
+      },
+      "package": "com.vihanganethusara.focus"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/create-account.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/create-account.png",
           "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "resizeMode": "cover",
+          "backgroundColor": "#f3e7ff"
         }
-      ]
+      ],
+      "expo-sqlite",
+      "expo-asset"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "aab18547-40d2-466b-9263-2f718198af74"
+      }
     }
   }
 }
